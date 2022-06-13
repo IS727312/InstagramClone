@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Instagram</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="log_in">Log In</string>
+    <string name="back4app_client_key">cLJu5bGMbGbRgrOUkcGGbH74kSb85xJrtrX2h4Nw</string>
+    <string name="back4app_app_id">uzKt735eTlk3Lpz28QGHSXpQelqapKriDMvcUwvO</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+</resources>
