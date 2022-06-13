@@ -1,6 +1,6 @@
-# Project 3 - *Name of App Here*
+# Project 3 - *Instagram Clone*
 
-**Name of your app** is a photo sharing app using Parse as its backend.
+**Instagram Clone** is a photo sharing app using Parse as its backend.
 
 Time spent: **X** hours spent in total
 
@@ -10,9 +10,9 @@ The following **required** functionality is completed:
 
 - [ ] User sees app icon in home screen.
 - [ ] User can sign up to create a new account using Parse authentication
-- [ ] User can log in to their account
-- [ ] The current signed in user is persisted across app restarts
-- [ ] User can log out of their account
+- [X] User can log in to their account
+- [X] The current signed in user is persisted across app restarts
+- [X] User can log out of their account
 - [ ] User can take a photo, add a caption, and post it to "Instagram"
 - [ ] User can view the last 20 posts submitted to "Instagram"
 - [ ] User can pull to refresh the last 20 posts submitted to "Instagram"
