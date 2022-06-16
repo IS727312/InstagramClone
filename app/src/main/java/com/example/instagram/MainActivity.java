@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnLogOut;
     private Button btnCaptureImage;
     private Button btnSubmit;
+    private Button btnToFeed;
     private EditText etDescription;
     private ImageView ivPostImage;
     private File photoFile;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btnToFeed = findViewById(R.id.btnToFeed);
         btnLogOut = findViewById(R.id.btnLogOut);
         btnSubmit = findViewById(R.id.btnSubmit);
         btnCaptureImage = findViewById(R.id.btnCaptureImage);
@@ -70,6 +72,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }));
+
+        btnToFeed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, FeedActivty.class);
+                startActivity(i);
+            }
+        });
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
