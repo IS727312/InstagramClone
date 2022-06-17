@@ -5,7 +5,9 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <queries>
+
         <!-- Camera -->
         <intent>
             <action android:name="android.media.action.IMAGE_CAPTURE" />
@@ -23,7 +25,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Instagram"
         tools:targetApi="31">
-        <activity android:name=".FeedActivty"></activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity android:name=".FeedActivty" />
+        <activity android:name=".PostDetailActivity" />
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -33,25 +40,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        
         <provider
-            android:authorities="com.codepath.fileprovider"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="com.codepath.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/fileprovider"/>
-
+                android:resource="@xml/fileprovider" />
         </provider>
     </application>
 

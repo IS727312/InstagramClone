@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".SignUpActivity">
 
     <EditText
         android:id="@+id/etSignUpUsername"
@@ -16,8 +15,8 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/username"
-        android:minHeight="48dp"
-        android:inputType="text" />
+        android:inputType="text"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/etSignUpPassword"
@@ -28,18 +27,23 @@
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
-    <Button
-        android:id="@+id/btnLogin"
+    <EditText
+        android:id="@+id/etSignUpConPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/log_in"
-        />
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
 
     <Button
-        android:id="@+id/btnSignUp"
+        android:id="@+id/btnFinalSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
